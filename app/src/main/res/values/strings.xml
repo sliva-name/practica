@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HistoryUp</string>
+    <string name="currentLevel">Текущий уровень</string>
+    <string name="some_id">0</string>
+    <string name="currentLevelCount">0</string>
+    <string name="taskText">Задания</string>
+    <string name="button_thread_text">Выполнить</string>
+    <string name="_1">Задание #1</string>
+    <string name="_2">Задание #2</string>
+    <string name="_3">Задание #3</string>
+    <string name="_4">Задание #4</string>
+    <string name="_5">Задание #5</string>
+</resources>

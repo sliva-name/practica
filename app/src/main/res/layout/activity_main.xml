@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8FCFF"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/ll0"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/currentLevel"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/currentLevelCount"
+                android:textColor="#676767"
+                android:textSize="21sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll0"
+                android:layout_marginTop="40dp"
+                android:text="@string/taskText"
+                android:textColor="@color/black"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView8"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/layout_bg2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_bold"
+                            android:text="@string/_1"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Как люди жили в древние времена?"
+                            android:textColor="#616161" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button2"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:onClick="btn1"
+                            app:iconTint="@color/black"
+                            android:text="@string/button_thread_text"
+                            android:textColor="@color/black"
+                            app:icon="@drawable/right_arrow_svgrepo_com"
+                            app:iconGravity="textEnd"
+                            app:iconSize="16dp"
+                            app:rippleColor="#e3e6e8"
+                            app:strokeColor="#1B1A1A"
+                            app:strokeWidth="2dp"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ll1"
+                        android:gravity="center"
+                        android:background="@drawable/layout_bg2"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_bold"
+                            android:text="@string/_2"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Жизнь древних людей"
+                            android:textColor="#616161" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:onClick="btn2"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"
+                            app:iconTint="@color/black"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            app:icon="@drawable/right_arrow_svgrepo_com"
+                            app:iconSize="16dp"
+                            app:iconGravity="textEnd"
+                            app:rippleColor="#e3e6e8"
+                            app:strokeColor="#1B1A1A"
+                            app:strokeWidth="2dp"
+                            android:text="@string/button_thread_text"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ll2"
+                        android:gravity="center"
+                        android:background="@drawable/layout_bg2"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_bold"
+                            android:text="@string/_3"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Верования и искусство первобытного человека"
+                            android:textColor="#616161" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:onClick="btn3"
+                            app:strokeColor="#1B1A1A"
+                            app:rippleColor="#e3e6e8"
+                            app:iconTint="@color/black"
+                            android:textColor="@color/black"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            app:icon="@drawable/right_arrow_svgrepo_com"
+                            app:iconSize="16dp"
+                            app:iconGravity="textEnd"
+                            app:strokeWidth="2dp"
+                            android:text="@string/button_thread_text" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ll3"
+                        android:gravity="center"
+                        android:background="@drawable/layout_bg2"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_bold"
+                            android:text="@string/_4"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Возникновение земледелия, скотоводства и ремесла"
+                            android:textColor="#616161" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button5"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:backgroundTint="@color/white"
+                            android:onClick="btn4"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            app:icon="@drawable/right_arrow_svgrepo_com"
+                            app:iconSize="16dp"
+                            app:iconGravity="textEnd"
+                            app:iconTint="@color/black"
+                            app:rippleColor="#e3e6e8"
+                            app:strokeColor="#1B1A1A"
+                            app:strokeWidth="2dp"
+                            android:text="@string/button_thread_text" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/ll4"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/layout_bg2"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_ui_bold"
+                            android:text="@string/_5"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Возникновение государства в древнем Египте"
+                            android:textColor="#616161" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button6"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:onClick="btn5"
+                            app:strokeColor="#1B1A1A"
+                            app:strokeWidth="2dp"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            app:icon="@drawable/right_arrow_svgrepo_com"
+                            app:rippleColor="#e3e6e8"
+                            app:iconSize="16dp"
+                            app:iconGravity="textEnd"
+                            app:iconTint="@color/black"
+                            android:textColor="@color/black"
+                            android:text="@string/button_thread_text" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
